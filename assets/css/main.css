@@ -1,0 +1,52 @@
+.clearfix, .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.scheduledate_ul {
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 0;
+    margin-bottom: -5px;
+    list-style-type: none;
+}
+
+.scheduledate_li {
+    width: 106px;
+    height: 64px;
+    border-radius: 4px;
+    display: inline-block;
+    float: left;
+    margin: 0 4px 8px;
+    border: 1px solid #bdbdbd;
+    cursor: pointer;
+}
+
+.scheduledate_li_active {
+    background-color: rgba(3,169,244,.12)!important;
+    border: 2px solid #03a9f4!important;
+}
+
+.scheduledate_li .scheduledate_p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 7px;
+    margin: 0;
+    color: #757575;
+}
+
+.scheduledate_ul .scheduledate_li_active>p {
+    color: #212121!important;
+}
+
+.scheduledate_li .scheduledate_pp {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: #616161;
+}
