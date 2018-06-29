@@ -15,63 +15,68 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                 <?php
                         if(isset($check_slug)){ ?>
-                        <h2 class="kw-section-title ">Best Gym Trainers for your fitness in Bangalore</h2>
+                        <h2 class="kw-section-title ">Best Physiotherapists at Home in Bangalore</h2>
                 <?php } ?>
             </div>
         </div>
-    
-    <div class="animate-switch-container" >
-        <div class="animate-switch">
-          <div class="">
-              <form name="MainMultiStepForm" class="form-validation" role="form" novalidate>
-              <div class="question_body">
-                  <h2>Training needed for:</h2>
-                          <div class="form-group">
-                                <label for="main_gender_male" class="switchery">Male
-                                    <input id="main_gender_male" checked="" type="radio" name="gender" value="Male" ng-true-value="'Male'" ng-false-value="''" class="" ng-model="mainformParams.gender" required ng-class="{'input-error': formValidation && MainMultiStepForm.gender.$error.required}">
-                                    <span  class="checkmark "></span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label for="main_gender_female" class="switchery">Female
-                                    <input id="main_gender_female" checked="" type="radio" name="gender" value="Female" ng-true-value="'Female'" ng-false-value="''" class="" ng-model="mainformParams.gender" required ng-class="{'input-error': formValidation && MainMultiStepForm.gender.$error.required}">
-                                    <span  class="checkmark "></span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label for="main_gender_group" class="switchery">Couple or Group
-                                    <input id="main_gender_group" checked="" type="radio" name="gender" value="Group" ng-true-value="'Group'" ng-false-value="''" class="" ng-model="mainformParams.gender" required ng-class="{'input-error': formValidation && MainMultiStepForm.gender.$error.required}">
-                                    <span  class="checkmark "></span>
-                                </label>
-                            </div>
-                    
-                    <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && MainMultiStepForm.gender.$error.required">
-                        <ul>
-                          <li ng-show="MainMultiStepForm.$invalid">Select an option to continue</li>
-                          <li ng-show="MainMultiStepForm.$valid"></li>
-                        </ul>
+        
+        <div class="animate-switch-container" >
+            <div class="animate-switch">
+              <div class="">
+                  <form name="MainMultiStepForm" class="form-validation" role="form" novalidate>
+                  <h2>Gender of patient:</h2>
+                  <div class="question_body">
+                                <div class="form-group">
+                                    <label for="Main_gender_male" class="switchery">Male Patient
+                                        <input id="Main_gender_male" type="radio" name="gender" value="Male" class="" ng-model="mainformParams.gender" required ng-class="{'input-error': formValidation && MainMultiStepForm.gender.$error.required}">
+                                        <span  class="checkmark "></span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Main_gender_female" class="switchery">Female Patient
+                                        <input id="Main_gender_female" type="radio" name="gender" value="Female" class="" ng-model="mainformParams.gender" required ng-class="{'input-error': formValidation && MainMultiStepForm.gender.$error.required}">
+                                        <span  class="checkmark "></span>
+                                    </label>
+                                </div>
+                        
+                        <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && MainMultiStepForm.gender.$error.required">
+                            <ul>
+                              <li ng-show="MainMultiStepForm.$invalid">Select an option to continue</li>
+                              <li ng-show="MainMultiStepForm.$valid"></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                    <div class="question_footer">    
-                      <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="openQuestionModal()">Next</button>
-                    </div>
-                </form>
-          </div>
+                        <div class="question_footer">    
+                          <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="openQuestionModal()">Next</button>
+                        </div>
+                    </form>
+              </div>
+            </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+        </div>
+      </div>
+    </main>
+</section>
+<div class="cat-sub-content">
+    <div class="row">
+        <div class="container">
+            <p>
+                UrbanClap is connecting you with best physiotherapists in Bangalore who use advanced techniques and evidence-based care. Top physiotherapists in Bangalore assess, diagnose, treat and prevent a wide range of health conditions and movement disorders. Physiotherapy helps repair damage, reduce stiffness and pain, increase mobility and improve quality of life. A typical session with our top physiotherapists in Bangalore is helpful to a patient’s needs and their health condition. Get relieved of your pain and start your best physiotherapy in Bangalore at your home and at your convenient time
+            </p>
         </div>
     </div>
-  </div>
-</main>
-</section>
-</div>
 </div>
 
 <!-- Modal -->
-  <div class="modal fade cat-container" id="question_detailsModal" role="dialog" ng-class="{big_window : stage == 'stage7'}">
+  <div class="modal fade cat-container" id="question_detailsModal" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
        <div class="modal-body" >
-           <button type="button" class="close" data-dismiss="modal">×</button>
+           <button type="button" class="close" data-dismiss="modal">x</button>
     <form name="multiStepForm" class="form-validation" role="form" novalidate>
       <div class="animate-switch-container" ng-switch on="stage" ng-class="{forward: direction, backward:!direction}">
         <div class="animate-switch1" ng-switch-default>
@@ -80,34 +85,28 @@
                         <div class="text">We will ask a few questions to connect you with the right Instructors</div>
                     </div>
                 </div>
-                <div class="question_footer">    
-                  <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage2')">Get Started</button>
-                </div>
+                    <div class="question_footer">    
+                      <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage2')">Get Started</button>
+                    </div>
         </div>
           
         <div class="animate-switch1" ng-switch-when="stage1">
             <?php
-                if(isset($check_slug)){ ?>
+                    if(isset($check_slug)){ ?>
                     <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
             <?php } ?>
           <div class="">
               <div class="question_body">
-                  <h2>Training needed for:</h2>
+                  <h2>Gender of patient:</h2>
                           <div class="form-group">
-                                <label for="gender_male" class="switchery">Male
+                                <label for="gender_male" class="switchery">Male Patient
                                     <input id="gender_male" ng-checked="formParams.gender" type="radio" name="gender" value="Male" class="" ng-model="formParams.gender" required ng-class="{'input-error': formValidation && multiStepForm.gender.$error.required}">
                                     <span  class="checkmark "></span>
                                 </label>
                             </div>
                             <div class="form-group">
-                                <label for="gender_female" class="switchery">Female
+                                <label for="gender_female" class="switchery">Female Patient
                                     <input id="gender_female" ng-checked="formParams.gender" type="radio" name="gender" value="Female" class="" ng-model="formParams.gender" required ng-class="{'input-error': formValidation && multiStepForm.gender.$error.required}">
-                                    <span  class="checkmark "></span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label for="gender_group" class="switchery">Couple or Group
-                                    <input id="gender_group" ng-checked="formParams.gender" type="radio" name="gender" value="Group" class="" ng-model="formParams.gender" required ng-class="{'input-error': formValidation && multiStepForm.gender.$error.required}">
                                     <span  class="checkmark "></span>
                                 </label>
                             </div>
@@ -124,6 +123,7 @@
                     </div>
           </div>
         </div>
+        
         <div class="animate-switch1" ng-switch-when="stage2">
             <?php
                     if(isset($check_slug)){ ?>
@@ -131,14 +131,160 @@
             <?php } ?>
           <div class="">
               <div class="question_body">
-                  <h2>How this works?</h2>
-                            <div class="form-group">
-                                <h3 class="switchery sub-heading" ><i class="fa fa-check" aria-hidden="true" style="color: #3c763d;"></i> Book FREE Trial Session</h3>
-                                <h3 class="switchery sub-heading" ><i class="fa fa-check" aria-hidden="true" style="color: #3c763d;"></i> If you like the trial session buy package of Rs. 5,999/month</h3>
-                                <h3 class="switchery sub-heading" ><i class="fa fa-check" aria-hidden="true" style="color: #3c763d;"></i> Get 12 sessions in 4 weeks</h3>
-                                <h3 class="switchery sub-heading" ><i class="fa fa-check" aria-hidden="true" style="color: #3c763d;"></i> Train with a certified trainer</h3>
+                  <h2>What do you need the physiotherapist for?</h2>
+                          <div class="form-group">
+                                <label for="back_pain" class="switchery">Back Pain
+                                    <input id="back_pain" checked="" type="radio" name="physiotherapist_for" value="Back Pain" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
                             </div>
-                    <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && multiStepForm.trainee_age.$error.required">
+                            <div class="form-group">
+                                <label for="sports_injuries" class="switchery">Sports Injuries
+                                    <input id="sports_injuries" checked="" type="radio" name="physiotherapist_for" value="Sports Injuries" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="knee_pain" class="switchery">Knee Pain
+                                    <input id="knee_pain" checked="" type="radio" name="physiotherapist_for" value="Knee Pain" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="neck_pain" class="switchery">Neck Pain
+                                    <input id="neck_pain" checked="" type="radio" name="physiotherapist_for" value="Neck Pain" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="post_surgical_rehab" class="switchery">Post Surgical Rehab
+                                    <input id="post_surgical_rehab" checked="" type="radio" name="physiotherapist_for" value="Post Surgical Rehab" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="neurological_issue" class="switchery">Neurological issue (Parkinson's, Spinal Injuries, Stroke etc...)
+                                    <input id="neurological_issue" checked="" type="radio" name="physiotherapist_for" value="Neurological issue (Parkinson's, Spinal Injuries, Stroke etc...)" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="shoulder_pain" class="switchery">Shoulder Pain
+                                    <input id="shoulder_pain" checked="" type="radio" name="physiotherapist_for" value="Shoulder Pain" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="hip_pain" class="switchery">Hip Pain
+                                    <input id="hip_pain" checked="" type="radio" name="physiotherapist_for" value="Hip Pain" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="others" class="switchery">Others
+                                    <input id="others" checked="" type="radio" name="physiotherapist_for" value="Others" class="" ng-model="formParams.physiotherapist_for" required ng-class="{'input-error': formValidation && multiStepForm.physiotherapist_for.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                    <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && multiStepForm.physiotherapist_for.$error.required">
+                        <ul>
+                          <li ng-show="multiStepForm.$invalid">Select an option to continue</li>
+                          <li ng-show="multiStepForm.$valid"></li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="question_footer">
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage1')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage3')">Next</button>
+                    </div>
+          </div>
+        </div>
+        
+        <div class="animate-switch1" ng-switch-when="stage3">
+            <?php
+                    if(isset($check_slug)){ ?>
+                    <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
+            <?php } ?>
+          <div class="">
+              <div class="question_body">
+                  <h2>Select the preferred gender of the physiotherapist?</h2>
+                          <div class="form-group">
+                                <label for="preferred_gender_flexible" class="switchery">I'm Flexible
+                                    <input id="preferred_gender_flexible" checked="" type="radio" name="preferred_gender" value="I'm Flexible" class="" ng-model="formParams.preferred_gender" required ng-class="{'input-error': formValidation && multiStepForm.preferred_gender.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferred_gender_female" class="switchery">Female Physiotherapist
+                                    <input id="preferred_gender_female" checked="" type="radio" name="preferred_gender" value="Female Physiotherapist" class="" ng-model="formParams.preferred_gender" required ng-class="{'input-error': formValidation && multiStepForm.preferred_gender.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferred_gender_male" class="switchery">Male Physiotherapist
+                                    <input id="preferred_gender_male" checked="" type="radio" name="preferred_gender" value="Male Physiotherapist" class="" ng-model="formParams.preferred_gender" required ng-class="{'input-error': formValidation && multiStepForm.preferred_gender.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                    <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && multiStepForm.preferred_gender.$error.required">
+                        <ul>
+                          <li ng-show="multiStepForm.$invalid">Select an option to continue</li>
+                          <li ng-show="multiStepForm.$valid"></li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="question_footer">
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage2')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage4')">Next</button>
+                    </div>
+          </div>
+        </div>
+        
+        <div class="animate-switch1" ng-switch-when="stage4">
+            <?php
+                    if(isset($check_slug)){ ?>
+                    <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
+            <?php } ?>
+          <div class="">
+              <div class="question_body">
+                  <h2>Age of patient:</h2>
+                          <div class="form-group">
+                                <label for="Less_than_18_years" class="switchery">Less than 18 years
+                                    <input id="Less_than_18_years" checked="" type="radio" name="patient_age" value="Less than 18 years" class="" ng-model="formParams.patient_age" required ng-class="{'input-error': formValidation && multiStepForm.patient_age.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="age_18_24_years" class="switchery">18 - 24 years
+                                    <input id="age_18_24_years" checked="" type="radio" name="patient_age" value="18 - 24 years" class="" ng-model="formParams.patient_age" required ng-class="{'input-error': formValidation && multiStepForm.patient_age.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="age_25_30_years" class="switchery">25-30 years
+                                    <input id="age_25_30_years" checked="" type="radio" name="patient_age" value="25-30 years" class="" ng-model="formParams.patient_age" required ng-class="{'input-error': formValidation && multiStepForm.patient_age.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="age_31_40_years" class="switchery">31-40 years
+                                    <input id="age_31_40_years" checked="" type="radio" name="patient_age" value="31-40 years" class="" ng-model="formParams.patient_age" required ng-class="{'input-error': formValidation && multiStepForm.patient_age.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="age_41_50_years" class="switchery">41- 50 years
+                                    <input id="age_41_50_years" checked="" type="radio" name="patient_age" value="41- 50 years" class="" ng-model="formParams.patient_age" required ng-class="{'input-error': formValidation && multiStepForm.patient_age.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="more_than_50_years" class="switchery">More than 50 years
+                                    <input id="more_than_50_years" checked="" type="radio" name="patient_age" value="More than 50 years" class="" ng-model="formParams.patient_age" required ng-class="{'input-error': formValidation && multiStepForm.patient_age.$error.required}">
+                                    <span  class="checkmark "></span>
+                                </label>
+                            </div>
+                    <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && multiStepForm.patient_age.$error.required">
                         <ul>
                           <li ng-show="multiStepForm.$invalid">Select an option to continue</li>
                           <li ng-show="multiStepForm.$valid"></li>
@@ -146,34 +292,28 @@
                     </div>
                 </div>
                 <div class="question_footer">
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage1')">Back</button>
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage3')">Next</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage3')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage5')">Next</button>
                 </div>
             </div>
         </div>
-        <div class="animate-switch1" ng-switch-when="stage3">
+        <div class="animate-switch1" ng-switch-when="stage5">
             <?php
                     if(isset($check_slug)){ ?>
                     <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
             <?php } ?>
             <div class="">
               <div class="question_body">
-                  <h2>Gender of the trainer you would prefer</h2>
-                          <div class="form-group">
-                                <label for="male_trainer" class="switchery">Male Trainer : Rs. 5,999/month
-                                    <input ng-required="true" id="male_trainer" checked="" type="radio" name="trainer_gender" value="Male Trainer : Rs. 5,999/month" class="" ng-model="formParams.trainer_gender" required ng-class="{'input-error': formValidation && multiStepForm.trainer_gender.$error.required}">
-                                    <span  class="checkmark "></span>
-                                </label>
-                            </div>
+                            <h2>UrbanClap Advantage</h2>
                             <div class="form-group">
-                                <label for="female_trainer" class="switchery">Female Trainer : Rs. 7,999/month
-                                    <input id="female_trainer" checked="" type="radio" name="trainer_gender" value="Female Trainer : Rs. 7,999/month" class="" ng-model="formParams.trainer_gender" required ng-class="{'input-error': formValidation && multiStepForm.trainer_gender.$error.required}">
-                                    <span  class="checkmark "></span>
-                                    <span ng-show="(formParams.trainer_gender == 'Female Trainer : Rs. 7,999/month')" class="check-box-content left">Good female trainers are rare and charge a premium</span>
-                                </label>
+                                <h3 class="switchery sub-heading" ><i class="fa fa-check" aria-hidden="true" style="color: #3c763d;"></i> INR 499 per session</h3>
+                                <p class="prefpack_p">No overcharging.Standardized pricing for all types of issues.</p>
+                                <h3 class="switchery sub-heading" ><i class="fa fa-check" aria-hidden="true" style="color: #3c763d;"></i> Highly Experienced Doctors</h3>
+                                <p class="prefpack_p">All Doctors on UrbanClap, hold BPT or MPT degrees with 3-15 years’ experience.</p>
+                                <h3 class="switchery sub-heading" ><i class="fa fa-check" aria-hidden="true" style="color: #3c763d;"></i> Convenience at your Doorstep!</h3>
+                                <p class="prefpack_p">Doctors carry all medical equipments to your home to provide you the best care.</p>
                             </div>
-                            
-                    <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && multiStepForm.trainer_gender.$error.required">
+                        <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation && multiStepForm.trainee_age.$error.required">
                         <ul>
                           <li ng-show="multiStepForm.$invalid">Select an option to continue</li>
                           <li ng-show="multiStepForm.$valid"></li>
@@ -181,15 +321,15 @@
                     </div>
                 </div>
                 <div class="question_footer">
-                    <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage2')">Back</button>
-                    <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage4')">Next</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage4')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage6')">Next</button>
                 </div>
             </div>
         </div>
-        <div class="animate-switch1" ng-switch-when="stage4">
+        <div class="animate-switch1" ng-switch-when="stage6">
             <?php
-                if(isset($check_slug)){ ?>
-                <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
+                    if(isset($check_slug)){ ?>
+                    <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
             <?php } ?>
           <div class="">
               <div class="question_body">
@@ -219,19 +359,19 @@
                     </div>
                 </div>
                 <div class="question_footer">
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage3')">Back</button>
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage5')">Next</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage5')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage7')">Next</button>
                 </div>
             </div>
         </div>
-        <div class="animate-switch1" ng-switch-when="stage5">
+        <div class="animate-switch1" ng-switch-when="stage7">
             <?php
                     if(isset($check_slug)){ ?>
                     <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
             <?php } ?>
           <div class="">
               <div class="question_body getin_touch">
-                  <h3>Let the best trainers get in touch with me via phone/whatsapp?</h3>
+                  <h2>Let the best trainers get in touch with me via phone/whatsapp?</h2>
                           <div class="form-group">
                                 <div class="form-group togglebutton">
                                 <label>
@@ -247,12 +387,12 @@
                     </div>
                 </div>
                 <div class="question_footer">
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage4')">Back</button>
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage6')">Next</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage6')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage8')">Next</button>
                 </div>
             </div>
         </div>
-        <div class="animate-switch1" ng-switch-when="stage6">
+        <div class="animate-switch1" ng-switch-when="stage8">
           <div class="">
               <?php
                 if(isset($check_slug)){ ?>
@@ -284,67 +424,19 @@
                     </div>
                 </div>
                 <div class="question_footer">
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage5')">Back</button>
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="next('stage7')">Next</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage7')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="submitAfterLogin('stage9')">Next</button>
                 </div>
             </div>
         </div>
-        <div class="animate-switch1 payment-container" ng-switch-when="stage7">
+        <div class="animate-switch1" ng-switch-when="stage9">
             <?php
                     if(isset($check_slug)){ ?>
                     <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
             <?php } ?>
           <div class=" ">
+              <h2>One last step:</h2>
               <div class="question_body">
-                  <div class="row">
-                      <div class="col-sm-6">
-                          <h2>Pay Using</h2>
-                            <div class="form-group">
-                                <div class="btn btn-default"><span class="lnr icon-history"></span> Pay after Service (Cash/Online)</div>
-                            </div>
-                            <div class="">
-                                <div class="form-group">
-                                    <label for="gender_female" class="switchery">Pay online after service
-                                        <input id="gender_female" ng-checked="formParams.payment" type="radio" name="payment" value="Pay online after service" class="" ng-model="formParams.payment" required ng-class="{'input-error': formValidation && multiStepForm.payment.$error.required}">
-                                        <span  class="checkmark "></span>
-                                    </label>
-                                </div>
-                                <div class="form-group">
-                                    <label for="gender_group" class="switchery">Pay with cash
-                                        <input id="gender_group" ng-checked="formParams.payment" type="radio" name="payment" value="Pay with cash" class="" ng-model="formParams.payment" required ng-class="{'input-error': formValidation && multiStepForm.payment.$error.required}">
-                                        <span  class="checkmark "></span>
-                                    </label>
-                                </div>
-                            </div>
-                      </div>
-                      <div class="col-sm-6">
-                          <h2>One last step:</h2>
-                            <div class="form-group mobile-number">
-                                
-                            </div>
-                      </div>
-                  </div>
-                  
-                        <div class="row error alert alert-danger" ng-show="toggleFormErrorsView = formValidation">
-                            <ul>
-                              <li ng-show="multiStepForm.payment.$error.required">Select an option to Place Order</li>
-                            </ul>
-                        </div>
-                </div>
-                <div class="question_footer">
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left" ng-click="back('stage6')">Back</button>
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-right" ng-click="submitAfterLogin('stage8')">Place Request</button>
-                </div>
-            </div>
-        </div>
-        <div class="animate-switch1" ng-switch-when="stage8">
-            <?php
-                    if(isset($check_slug)){ ?>
-                    <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
-            <?php } ?>
-          <div class=" ">
-              <div class="question_body">
-                  <h2>One last step:</h2>
                         <div class="form-group mobile-number">
                             <label class="country-code">+91</label>
                             <input type="text" ng-model="formParams.mobile" ng-minlength="10" ng-maxlength="10" placeholder="Mobile Number" name="mobile" class="form-control mobile" required ng-pattern="phoneNumbr" id="mobile" ng-class="{'input-error': formValidation && multiStepForm.mobile.$error.required && multiStepForm.mobile.$error.minlength && multiStepForm.mobile.$error.maxlength && multiStepForm.mobile.$error.pattern}" >
@@ -362,21 +454,21 @@
                         </div>
                 </div>
                 <div class="question_footer">
-                    <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left pull-left" ng-click="back('stage7')">Back</button>
+                    <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left pull-left" ng-click="back('stage8')">Back</button>
                 </div>
             </div>
         </div>
-        <div class="animate-switch1" ng-switch-when="stage9">
+        <div class="animate-switch1" ng-switch-when="stage10">
             <?php
                 if(isset($check_slug)){ ?>
                 <h2 class="kw-section-title "><?php echo $check_slug[0]['title']; ?></h2>
             <?php } ?>
           <div class=" ">
+              <h2>One last step:</h2>
               <div class="question_body">
-                  <h2>One last step:</h2>
                     <div class="form-group ">
                         <input type="text" readonly="true" ng-model="formParams.mobileReadonly" name="mobileReadonly" class="form-control disabled" ng-value="formParams.mobile" >
-                        <button class="locate-me edit-btn btn btn-primary" ng-model="formParams.edit_mobile" ng-click="back('stage8')">Edit</button>
+                        <button class="locate-me edit-btn btn btn-primary" ng-model="formParams.edit_mobile" ng-click="back('stage9')">Edit</button>
                     </div>
                     <div class="form-group ">
                         <input type="text" maxlength="6" ng-model="formParams.otp" placeholder="Enter 4 Digits OTP" name="otp" class="form-control" required id="otp" ng-class="{'input-error': formValidation && multiStepForm.otp.$error.required }" >
@@ -395,7 +487,7 @@
                         </div>
                 </div>
                 <div class="question_footer">
-                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left pull-left" ng-click="back('stage7')">Back</button>
+                        <button type="button" class="btn btn-primary btn-3 btn-3d lnr icon-arrow-left pull-left" ng-click="back('stage8')">Back</button>
                 </div>
             </div>
         </div>
@@ -431,6 +523,8 @@
     </div>
     </div>
     </div>
+
+
 <?php
 $this->load->view('common/footer');
 ?>

@@ -55,11 +55,62 @@ class Login extends CI_Controller {
 	    }
 	}
 	
+	public function my_bookingsAjax(){
+
+	    if($this->session->userdata('logged_in')){
+            $id = $this->session->userdata('logged_in')['id'];
+            
+            $start = 0;
+            $postdata = file_get_contents("php://input");
+            $request = json_decode($postdata);
+             if(isset($request->counts) || !empty($request->counts)){
+                $start = 9 * $request->counts;
+            }
+            
+            $ongoing_order = $this->login_form->get_order_history($id,$start);
+            if($ongoing_order and count($ongoing_order)>0){
+                echo json_encode(array("code"=>'200',"status"=>"success","message"=>"Items Available","items"=>$ongoing_order));
+                return true;
+            }else{
+                echo json_encode(array("code"=>'201',"status"=>"success","message"=>"Items Not Available","items"=>[]));
+                return true;
+            }
+	    }else{
+	        echo json_encode(array("code"=>'203',"status"=>"error","message"=>"Enter all required fields","items"=>[]));
+            return true;
+	    }
+	}
+	
+	public function my_ongoingbookingsAjax(){
+
+	    if($this->session->userdata('logged_in')){
+            $id = $this->session->userdata('logged_in')['id'];
+            
+            $start = 0;
+            $postdata = file_get_contents("php://input");
+            $request = json_decode($postdata);
+             if(isset($request->counts) || !empty($request->counts)){
+                $start = 9 * $request->counts;
+            }
+            
+            $ongoing_order = $this->login_form->get_ongoing_order($id,$start);
+            if($ongoing_order and count($ongoing_order)>0){
+                echo json_encode(array("code"=>'200',"status"=>"success","message"=>"Items Available","items"=>$ongoing_order));
+                return true;
+            }else{
+                echo json_encode(array("code"=>'201',"status"=>"success","message"=>"Items Not Available","items"=>[]));
+                return true;
+            }
+	    }else{
+	        echo json_encode(array("code"=>'203',"status"=>"error","message"=>"Enter all required fields","items"=>[]));
+            return true;
+	    }
+	}
+	
 	public function my_account(){
 	    $data['activepage']="account";
 	    
 	    if($this->session->userdata('logged_in')){
-	        
 	        $data['login_details'] = $this->login_form->get_login_details_by_id($this->session->userdata('logged_in')['id']);
 	        
         if ($data['login_details'] && is_array($data['login_details'])){
@@ -98,6 +149,7 @@ class Login extends CI_Controller {
          'phone'   => $this->security->xss_clean($request->mobile),
          'city'   => $this->security->xss_clean($request->city),
          'address'=> $this->security->xss_clean($request->address),
+         'type'   => 'signup',
          'status'   => 'N',
          'ip'   => $this->details->getClientIP()
       );
@@ -180,6 +232,76 @@ class Login extends CI_Controller {
                     return true;
                     exit();
             }
+        }
+        }
+	   }catch(Exception $ex){
+	       echo json_encode(array("code"=>'203',"status"=>"error","message"=>$e->getMessage()));
+            return true;
+            exit();
+	   }
+	}
+	
+	
+	public function change_password(){
+	    //header('Content-type: application/json');
+	    try{
+	    $postdata = file_get_contents("php://input");
+	     if(empty($postdata)){
+            echo json_encode(array("code"=>'202',"status"=>"error","message"=>"Empty Request data!"));
+            return true;
+            exit();
+        }else{
+	         $request = json_decode($postdata);
+    	     if(!isset($request->password) || empty($request->password) || !isset($request->new_password) || empty($request->new_password) || !isset($request->confirm_password) || empty($request->confirm_password)){
+                        echo json_encode(array("code"=>'203',"status"=>"error","message"=>"Fill all the required fields!"));
+                        return true;
+                        exit();
+                    }else if(strlen($request->new_password) < 8){
+                    echo json_encode(array("code"=>'204',"status"=>"error","message"=>"Password length should be more than 8 characters or more"));
+                    return true;
+                    exit();
+                }else if($request->new_password !== $request->confirm_password){
+                    echo json_encode(array("code"=>'205',"status"=>"error","message"=>"New password and Confirm password should be same!"));
+                    return true;
+                    exit();
+                    
+                }
+            
+         $customer_details = array(
+         'password'=> $this->security->xss_clean($request->password),
+         'new_password'   => $this->security->xss_clean($request->new_password),
+         'confirm_password'   => $this->security->xss_clean($request->confirm_password),
+         'ip'   => $this->details->getClientIP()
+        );
+        
+        $userID =$this->session->userdata('logged_in')['id'];
+        $update_details_mobile = $this->login_form->get_login_details_by_id($userID);
+        
+        if ($update_details_mobile && is_array($update_details_mobile)){
+            
+            if($update_details_mobile[0]['password'] && $update_details_mobile[0]['password'] == md5($customer_details['password'])){
+                $password = md5($customer_details['new_password']);
+                $signup_details = $this->login_form->update_password($userID,$password);
+                
+                if($signup_details == true){
+                    echo json_encode(array("code"=>'200',"status"=>"success","message"=>"New password changed successfully."));
+                    return true;
+                    exit();
+                }else{
+                    echo json_encode(array("code"=>'209',"status"=>"error","message"=>"Error:".$signup_details));
+                    return true;
+                    exit();
+                }
+            }else{
+                echo json_encode(array("code"=>'210',"status"=>"error","message"=>'You have entered wrong Current password!'.$update_details_mobile[0]['password'].'='.md5($customer_details['password'])));
+                return true;
+                exit();
+            }
+            
+        }else{
+                echo json_encode(array("code"=>'208',"status"=>"error","message"=>'Refresh the page and login again'));
+                return true;
+                exit();
         }
         }
 	   }catch(Exception $ex){

@@ -3,7 +3,7 @@
 			<div class="container-fluid">
 
 				<div class="row f-second-row footer">
-					<div class="m1170">
+					<div class="m1170 row">
 						<div class="col-sm-4 f-1td top40" data-wow-delay="0.7s" data-wow-duration="1.5s">
 							<h5 class="uppercase colorfff footer-title"><b class="footer-title">About Uriah</b></h5>
 							<div class="footer-logo top30"><a class="footerLogo" href="01-home-1.html"><div class="o-circle"></div><div class="no-wrap"><h5 class="f-wisem color777"><b class="coloraaa">URIAH</b> ...</h5></div></a></div>
@@ -75,7 +75,7 @@
 				<div class="row f-third-row footer2">
 					<div class="m1170">
 						<div class="footer-relative">
-							<div class="col-sm-6 left-footer2">
+							<div class="col left-footer2">
 								&copy; 2018 URIAH - All Rights Reserved. <a href="#">Privacy Policy </a>
 							</div>							
 							<div class="clearfix"></div>
@@ -86,10 +86,9 @@
 		</footer>
 	</div>
 	<div class="arcticmodal-overlay" style="background-color: rgb(0, 0, 0); opacity: 0.6;"></div>
-	
 	<?php
 	if(!$this->session->userdata('logged_in')){?>
-	<div class="arcticmodal-container modal fade" id="view_login_popup" role="dialog" aria-hidden="true" ng-controller="SignUpCtrl" ng-cloak>
+	<div class="arcticmodal-container modal fade" id="view_login_popup" role="dialog" aria-hidden="true" ng-controller="SignUpCtrl as Signup" ng-cloak>
                <div class="arcticmodal-container_i modal-dialog">
                         <div class="arcticmodal-container_i2">
                            <div class="kw-modal kw-login-modal">
@@ -169,7 +168,7 @@
             </div>
     </div>
     
-    <div class="arcticmodal-container modal fade register" id="view_signup_popup" role="dialog" aria-hidden="true" ng-controller="SignUpCtrl" ng-cloak>
+    <div class="arcticmodal-container modal fade register" id="view_signup_popup" role="dialog" aria-hidden="true" ng-controller="SignUpCtrl as Signup" ng-cloak>
                <div class="arcticmodal-container_i modal-dialog">
                         <div class="arcticmodal-container_i2">
                            <div class="kw-modal kw-login-modal">
@@ -289,7 +288,7 @@
                 </div>
         </div>
         
-        <div class="arcticmodal-container modal fade" id="view_forgot_password_popup" role="dialog" aria-hidden="true" ng-controller="SignUpCtrl" ng-cloak>
+        <div class="arcticmodal-container modal fade" id="view_forgot_password_popup" role="dialog" aria-hidden="true" ng-controller="SignUpCtrl as Signup" ng-cloak>
                <div class="arcticmodal-container_i modal-dialog">
                         <div class="arcticmodal-container_i2">
                            <div class="kw-modal kw-login-modal">
@@ -339,23 +338,26 @@
             </div>
     </div>
     <?php } ?>
-    <!--<script type="text/javascript" src="<?php //echo base_url(); ?>assets/js/app.js"></script>--> <!--firebase action
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/angular.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>-->
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src='<?php echo base_url(); ?>assets/js/bootstrap/popper.js'></script>
+	<script type="text/javascript" src='<?php echo base_url(); ?>assets/js/bootstrap/bootstrap.min.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/angular-animate.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
-	
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/angular.app.js"></script>
+	<script>
+	    var appBusyToEasy = angular.module("BusyToEasy", ['ngAnimate','ngSanitize','gm']);
+	    var base_url = "<?php echo base_url(); ?>";
+	</script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/angular.city.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8IadnL8n0vlI6l9aQ9iHIqhlNSOesTSY&libraries=places"></script>
+    <script src="<?php echo base_url(); ?>assets/js/map/angularjs-google-maps.js"></script>
 	<?php
 	if(!$this->session->userdata('logged_in')){?>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/angular/angular.login.signup.js?ver=<?php echo time(); ?>"></script>
 	<?php } ?>
 	
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/libs/modernizr.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/libs/jquery-3.1.0.min.js"></script>
-	<script type="text/javascript" src='<?php echo base_url(); ?>assets/js/bootstrap.min.js'></script>
-	  
+	
 	  <script src="<?php echo base_url(); ?>assets/js/libs/jquery.mousewheel-3.0.6.pack.js"></script>
       <script src="<?php echo base_url(); ?>assets/js/libs/handlebars-v4.0.5.js"></script>
       <script src="<?php echo base_url(); ?>assets/plugins/wt.validator.min.js"></script>

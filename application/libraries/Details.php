@@ -16,6 +16,30 @@ class Details{
     /**
      * @return string
      */
+    public function sendLocalSMS($mob,$msg){
+        //Account details
+    	$apiKey = urlencode('ve6NDPJE0nA-zr8TWvmmqkZYK9t55uiuBUiMcCCZEZ');
+    	//Message details
+    	//$numbers = $mob;
+    	$sender = urlencode('TXTLCL');
+    	$message = rawurlencode($msg);
+    	$numbers = (is_array($mob))?implode(',', $mob):$mob;
+    	//Prepare data for POST request
+    	$data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
+     
+    	//Send the POST request with cURL
+    	$ch = curl_init('https://api.textlocal.in/send/');
+    	curl_setopt($ch, CURLOPT_POST, true);
+    	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    	$response = curl_exec($ch);
+    	curl_close($ch);
+    	//Process your response here
+    	return $response;
+    }
+    
+     
+     
     public function getClientIP(){
     $ipaddress = '';
     		if (isset($_SERVER['HTTP_CLIENT_IP'])){

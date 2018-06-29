@@ -44,7 +44,12 @@ class Login_form extends CI_Model{
         return $query->result_array();
     }
     public function update_userDetails($id,$data){
-        $sql = "UPDATE user SET full_name='$data[full_name]',phone='$data[phone]',city='$data[city]',address='$data[address]',ip='$data[ip]' WHERE id='$id'";
+        $sql = "UPDATE user SET full_name='$data[full_name]',email='$data[email]',phone='$data[phone]',city='$data[city]',address='$data[address]',ip='$data[ip]' WHERE id='$id'";
+        return $this->db->query($sql);
+    }
+    
+    public function update_password($id,$password){
+        $sql = "UPDATE user SET password='$password' WHERE id='$id'";
         return $this->db->query($sql);
     }
     
@@ -60,14 +65,14 @@ class Login_form extends CI_Model{
         return  $insert_id;
     }
     
-    public function get_ongoing_order($data){
-        $sql = "SELECT *,od.status as orderStatus FROM orders od LEFT JOIN be_category bc ON bc.id=od.id WHERE od.user_id='$data' GROUP BY od.id";        
+    public function get_ongoing_order($data,$start=0,$limit=9){
+        $sql = "SELECT *,od.status as orderStatus,od.id as orderID FROM orders od LEFT JOIN be_category bc ON bc.id=od.cat_id WHERE od.user_id='$data' AND (od.status='Progress' OR od.status='Not Allocated') GROUP BY od.id ORDER BY od.id DESC LIMIT ".$start.",".$limit;        
         $query = $this->db->query($sql);        
         return $query->result_array();
     }
     
-    public function get_order_history($data,$start=1){
-        $sql = "SELECT * FROM orders WHERE user_id='$data' LIMIT $start, 10";        
+    public function get_order_history($data,$start=0,$limit=9){
+        $sql = "SELECT *,od.status as orderStatus,od.id as orderID FROM orders od LEFT JOIN be_category bc ON bc.id=od.cat_id WHERE od.user_id='$data' GROUP BY od.id ORDER BY od.id DESC LIMIT ".$start.",".$limit;        
         $query = $this->db->query($sql);        
         return $query->result_array();
     }

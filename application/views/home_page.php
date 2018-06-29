@@ -381,7 +381,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>dietician" class="kw-listing-item-thumbnail" target="_blank">
                                     <img src="<?php echo base_url(); ?>assets/images/11.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -392,7 +392,7 @@ $this->load->view('common/header');
                                  <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-info">
                                     <header class="kw-listing-item-header">
-                                       <h3 class="kw-listing-item-title"><a href="#">Dietician</a></h3>
+                                       <h3 class="kw-listing-item-title"><a href="<?php echo base_url(); ?>dietician">Dietician</a></h3>
                                     </header>
                                  </div>
                                  <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
@@ -404,7 +404,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>physiotherapy-at-home" class="kw-listing-item-thumbnail" target="_blank">
                                     <img src="<?php echo base_url(); ?>assets/images/15.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -427,7 +427,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>salon-at-home" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/20.jpg" alt="" style="width:257px;height:149px;">
                                     </a>         
                                     <div class="advert-tags">
@@ -450,7 +450,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>spa-at-home-for-women" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/17.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -488,7 +488,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711437" data-longitude="-74.001378" data-marker="<?php echo base_url(); ?>assets/images/marker_1.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>sofa-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/16.jpg" alt="">
                                     </a>
                                     <div class="advert-tags">
@@ -511,7 +511,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>bathroom-deep-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/9.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -534,7 +534,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>home-deep-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/13.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -557,7 +557,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>kitchen-deep-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/14.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -580,7 +580,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>carpet-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/10.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -618,7 +618,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711437" data-longitude="-74.001378" data-marker="<?php echo base_url(); ?>assets/images/marker_1.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>carpenter" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/22.jpg" alt="">
                                     </a>
                                     <div class="advert-tags">
@@ -641,7 +641,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>plumber" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/29.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -664,7 +664,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>electrician" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/23.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -687,7 +687,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>ac-service-and-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/21.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -710,7 +710,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>mobile-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/28.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -733,7 +733,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>laptop-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/26.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -756,7 +756,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>microwave-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/27.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -779,7 +779,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>refrigerator-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/30.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -802,7 +802,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>washing-machine-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/34.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -825,7 +825,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>water-purifier-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/31.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -848,7 +848,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>iphone-ipad-mac-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/25.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -871,7 +871,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>tv-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/33.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -894,7 +894,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>water-heater-repair" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/24.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -932,7 +932,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711437" data-longitude="-74.001378" data-marker="<?php echo base_url(); ?>assets/images/marker_1.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>packers-movers" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/icons/2.jpg" alt="" style="width:255px;height:148px;">
                                     </a>
                                     <div class="advert-tags">
@@ -955,53 +955,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/images/37.jpg" alt="">
-                                    </a>         
-                                    <div class="advert-tags">
-                                                <div class="urgent"> Featured</div>
-                                             </div>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
-                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-info">
-                                    <header class="kw-listing-item-header">
-                                       <h3 class="kw-listing-item-title"><a href="#">Carpenter</a></h3>
-                                    </header>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
-                              </article>
-                           </div>
-                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
-                            <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
-                           <div class="kw-listing-item-wrap">
-                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
-                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/images/36.jpg" alt="">
-                                    </a>         
-                                    <div class="advert-tags">
-                                                <div class="urgent"> Featured</div>
-                                             </div>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
-                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-info">
-                                    <header class="kw-listing-item-header">
-                                       <h3 class="kw-listing-item-title"><a href="#">AC Service and Repair</a></h3>
-                                    </header>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
-                              </article>
-                           </div>
-                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
-                           <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
-                           <div class="kw-listing-item-wrap">
-                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
-                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>pest-control" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/41.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -1024,7 +978,101 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>renovation" target="_blank" class="kw-listing-item-thumbnail">
+                                    <img src="<?php echo base_url(); ?>assets/images/40.jpg" alt="">
+                                    </a>         
+                                    <div class="advert-tags">
+                                                <div class="urgent"> Featured</div>
+                                             </div>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
+                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-info">
+                                    <header class="kw-listing-item-header">
+                                       <h3 class="kw-listing-item-title"><a href="#">Renovation</a></h3>
+                                    </header>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
+                              </article>
+                           </div>
+                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
+                           <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
+                           <div class="kw-listing-item-wrap">
+                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
+                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-media">
+                                    <a href="<?php echo base_url(); ?>house-painters" target="_blank" class="kw-listing-item-thumbnail">
+                                    <img src="<?php echo base_url(); ?>assets/images/39.jpg" alt="">
+                                    </a>         
+                                    <div class="advert-tags">
+                                                <div class="urgent"> Featured</div>
+                                             </div>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
+                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-info">
+                                    <header class="kw-listing-item-header">
+                                       <h3 class="kw-listing-item-title"><a href="#">House Painters</a></h3>
+                                    </header>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
+                              </article>
+                           </div>
+                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->                         
+                        
+                           <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
+                           <div class="kw-listing-item-wrap">
+                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
+                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-media">
+                                    <a href="<?php echo base_url(); ?>carpenter" target="_blank" class="kw-listing-item-thumbnail">
+                                    <img src="<?php echo base_url(); ?>assets/images/37.jpg" alt="">
+                                    </a>         
+                                    <div class="advert-tags">
+                                                <div class="urgent"> Featured</div>
+                                             </div>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
+                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-info">
+                                    <header class="kw-listing-item-header">
+                                       <h3 class="kw-listing-item-title"><a href="#">Carpenter</a></h3>
+                                    </header>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
+                              </article>
+                           </div>
+                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
+                           <div class="kw-listing-item-wrap">
+                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
+                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-media">
+                                    <a href="<?php echo base_url(); ?>ac-service-and-repair" target="_blank" class="kw-listing-item-thumbnail">
+                                    <img src="<?php echo base_url(); ?>assets/images/36.jpg" alt="">
+                                    </a>         
+                                    <div class="advert-tags">
+                                                <div class="urgent"> Featured</div>
+                                             </div>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
+                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-info">
+                                    <header class="kw-listing-item-header">
+                                       <h3 class="kw-listing-item-title"><a href="#">AC Service and Repair</a></h3>
+                                    </header>
+                                 </div>
+                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
+                              </article>
+                           </div>
+                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
+                           
+                           <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
+                           <div class="kw-listing-item-wrap">
+                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
+                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
+                                 <div class="kw-listing-item-media">
+                                    <a href="<?php echo base_url(); ?>sofa-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/42.jpg" alt="" >
                                     </a>         
                                     <div class="advert-tags">
@@ -1047,7 +1095,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>bathroom-deep-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/icons/3.jpg" alt="" style="width:255px;height:148px;">
                                     </a>         
                                     <div class="advert-tags">
@@ -1070,7 +1118,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>home-deep-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/icons/7.jpg" alt="" style="width:255px;height:148px;">
                                     </a>         
                                     <div class="advert-tags">
@@ -1093,7 +1141,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>kitchen-deep-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/icons/14.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -1116,7 +1164,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="https://www.webliststore.com/busytoeasy/assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>carpet-cleaning" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/icons/10.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -1139,7 +1187,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>electrician" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/23.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -1162,7 +1210,7 @@ $this->load->view('common/header');
                               <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
                                  <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
                                  <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
+                                    <a href="<?php echo base_url(); ?>plumber" target="_blank" class="kw-listing-item-thumbnail">
                                     <img src="<?php echo base_url(); ?>assets/images/29.jpg" alt="">
                                     </a>         
                                     <div class="advert-tags">
@@ -1180,77 +1228,9 @@ $this->load->view('common/header');
                               </article>
                            </div>
                            <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
-                           <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
-                           <div class="kw-listing-item-wrap">
-                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
-                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/images/38.jpg" alt="">
-                                    </a>         
-                                    <div class="advert-tags">
-                                                <div class="urgent"> Featured</div>
-                                             </div>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
-                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-info">
-                                    <header class="kw-listing-item-header">
-                                       <h3 class="kw-listing-item-title"><a href="#">Construction</a></h3>
-                                    </header>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
-                              </article>
                            </div>
-                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
-                           <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
-                           <div class="kw-listing-item-wrap">
-                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
-                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/images/40.jpg" alt="">
-                                    </a>         
-                                    <div class="advert-tags">
-                                                <div class="urgent"> Featured</div>
-                                             </div>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
-                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-info">
-                                    <header class="kw-listing-item-header">
-                                       <h3 class="kw-listing-item-title"><a href="#">Construction and Renovation</a></h3>
-                                    </header>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
-                              </article>
-                           </div>
-                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->
-                           <!-- - - - - - - - - - - - - - Listing Item - - - - - - - - - - - - - - - - -->
-                           <div class="kw-listing-item-wrap">
-                              <article class="kw-listing-item" data-latitude="40.711591" data-longitude="-74.003416" data-marker="<?php echo base_url(); ?>assets/images/marker_2.png">
-                                 <!-- - - - - - - - - - - - - - Media - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-media">
-                                    <a href="#" class="kw-listing-item-thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/images/39.jpg" alt="">
-                                    </a>         
-                                    <div class="advert-tags">
-                                                <div class="urgent"> Featured</div>
-                                             </div>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Media - - - - - - - - - - - - - - - - -->
-                                 <!-- - - - - - - - - - - - - - Description - - - - - - - - - - - - - - - - -->
-                                 <div class="kw-listing-item-info">
-                                    <header class="kw-listing-item-header">
-                                       <h3 class="kw-listing-item-title"><a href="#">House Painters</a></h3>
-                                    </header>
-                                 </div>
-                                 <!-- - - - - - - - - - - - - - End of Description - - - - - - - - - - - - - - - - -->
-                              </article>
-                           </div>
-                           <!-- - - - - - - - - - - - - - End of Listing Item - - - - - - - - - - - - - - - - -->                         
-                        </div>
                         <!-- - - - - - - - - - - - - - End of Listings Container - - - - - - - - - - - - - - - - -->
+                           
                      </div>
                   </div>
                   <!--/ .row -->

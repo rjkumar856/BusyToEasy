@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-                <h1>My Account Details <small><button class="btn btn-primary" title="Edit account details" data-toggle="modal" data-target="#view_edit_user_popup">Edit</button></small></h1>
+          <h1 class="kw-section-title pull-left">My Account Details <small><button class="btn btn-primary" title="Edit account details" data-toggle="modal" data-target="#view_edit_user_popup">Edit</button></small></h1>
                 <div class="row orders">
                     <?php
                     if(isset($login_details) and is_array($login_details)){
@@ -53,9 +53,15 @@
 <div class="arcticmodal-container modal fade register" id="view_edit_user_popup" role="dialog" aria-hidden="true" ng-controller="EditUserCtrl" ng-cloak>
                <div class="arcticmodal-container_i modal-dialog">
                         <div class="arcticmodal-container_i2">
-                           <div class="kw-modal kw-login-modal" ng-switch on="tabs">
+                           <div class="kw-modal kw-login-modal tabs" ng-switch on="tabs">
                               <button type="button" data-dismiss="modal" class="arcticmodal-close kw-modal-close"></button>
-                              <div ng-switch-default>
+                              <div class="tabbed">
+                                  <ul class="tabs">
+                                      <li class="tab" ng-class="{'active': (tabs != 'password') }"><button class="btn btn-primary" ng-click="changeTabs('edit')">Edit Account Details</button></li>
+                                      <li class="tab" ng-class="{'active': (tabs == 'password') }"><button class="btn btn-primary" ng-click="changeTabs('password')">Change Password</button></li>
+                                  </ul>
+                              </div>
+                              <div class="tabs-content" ng-switch-default>
                               <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
                               <header class="kw-modal-header">
                                  <h3>Edit Account Details</h3>
@@ -63,7 +69,7 @@
                               <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
                               <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
                               <div class="kw-modal-content">
-                                 <form name="editUserForm" id="editUserForm" method="POST" >
+                                 <form name="editUserForm" id="editUserForm" method="POST" ng-submit="UpdateUserDetails(editUserForm.$valid)" >
                                      <?php
                                         if(isset($login_details) and is_array($login_details)){
                                         foreach($login_details as $value){ ?>
@@ -73,7 +79,7 @@
                                                   <div class="form-group">
                                                      <label for="login-username" class="kw-required">Email address</label>
                                                      <div class="kw-input-wrapper">
-                                                        <input type="text" readonly class="disabled" value="<?php echo $value['email']; ?>" required="" name="email" ng-model="edit.email" id="edit_email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" placeholder="Email address" ng-class="{'input-error': signupValidation && editUserForm.email.$error.required}">
+                                                        <input type="text" <?php if(!empty($value['email'])){ ?> readonly class="disabled" <?php } ?> value="<?php echo $value['email']; ?>" required="" name="email" ng-model="edit.email" id="edit_email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" placeholder="Email address" ng-class="{'input-error': signupValidation && editUserForm.email.$error.required}">
                                                      </div>
                                                      <!--/ .kw-input-wrap -->
                                                   </div>
@@ -148,7 +154,7 @@
                                           <li ng-show="editUserForm.city.$error.required">City is mandatory.</li>
                                         </ul>
                                     </div>
-                                    <button type="submit" class="kw-btn-medium kw-yellow" ng-click="UpdateUserDetails()">Update</button>
+                                    <button type="submit" class="kw-btn-medium kw-yellow">Update</button>
                                         <!--/ .kw-additional-action -->
                                  </form>
                               </div>
@@ -162,29 +168,29 @@
                               <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
                               <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
                               <div class="kw-modal-content">
-                                 <form name="changePassordForm" id="changePassordForm" method="POST" >
+                                 <form name="changePassordForm" id="changePassordForm" method="POST" ng-submit="ChangeUserPassword(changePassordForm.$valid)" novalidate>
                                             <ul><!-- - - - - - - - - - - - - - Form Row - - - - - - - - - - - - - - - - -->
-                                               <li class="col-xs-12 col-sm-6 p-r-0">
+                                               <li class="col-xs-12 p-r-0 p-l-0">
                                                   <div class="form-group">
-                                                     <label for="login-username" class="kw-required">Current Password*</label>
+                                                     <label for="login-username" class="kw-required">Current Password</label>
                                                      <div class="kw-input-wrapper">
                                                         <input type="text" required="" name="password" ng-model="change.password" id="change_password" ng-minlength="6" ng-maxlength="255" placeholder="Current address" ng-class="{'input-error': signupValidation && changePassordForm.password.$error.required}">
                                                      </div>
                                                      <!--/ .kw-input-wrap -->
                                                   </div>
                                                </li>
-                                               <li class=" col-xs-12 col-sm-6 p-r-0">
+                                               <li class=" col-xs-12 p-r-0 p-l-0">
                                                   <div class="form-group">
-                                                     <label for="login-username" class="kw-required">New Password*</label>
+                                                     <label for="login-username" class="kw-required">New Password</label>
                                                      <div class="kw-input-wrapper">
                                                         <input type="text" required="" ng-model="change.new_password" ng-minlength="8" ng-maxlength="255" name="new_password" id="new_password" placeholder="New Password" ng-class="{'input-error': signupValidation && changePassordForm.new_password.$error.required}">
                                                      </div>
                                                      <!--/ .kw-input-wrap -->
                                                   </div>
                                                </li>
-                                               <li class=" col-xs-12 col-sm-6 p-r-0">
+                                               <li class=" col-xs-12 p-r-0 p-l-0">
                                                   <div class="form-group">
-                                                     <label for="login-username" class="kw-required">Confirm Password*</label>
+                                                     <label for="login-username" class="kw-required">Confirm Password</label>
                                                      <div class="kw-input-wrapper">
                                                         <input type="text" required="" ng-model="change.confirm_password" name="confirm_password" ng-minlength="8" ng-maxlength="255" id="new_password" placeholder="Confirm Password" ng-class="{'input-error': signupValidation && changePassordForm.new_password.$error.required}">
                                                      </div>
@@ -201,7 +207,6 @@
                                           <li ng-show="changePassordForm.password.$error.required">Current Password is mandatory.</li>
                                           <li ng-show="changePassordForm.password.$error.minlength">Enter valid Current Password.</li>
                                           <li ng-show="changePassordForm.password.$error.maxlength">Enter valid Current Password.</li>
-                                          
                                           <li ng-show="changePassordForm.new_password.$error.required">New Password is mandatory</li>
                                           <li ng-show="changePassordForm.new_password.$error.minlength">New Password should have minimum 8 charactors</li>
                                           <li ng-show="changePassordForm.new_password.$error.maxlength">New Password should have maximum 255 charactors</li>
@@ -209,7 +214,7 @@
                                           
                                         </ul>
                                     </div>
-                                    <button type="submit" class="kw-btn-medium kw-yellow" ng-click="UpdateUserDetails()">Update</button>
+                                    <button type="submit" class="kw-btn-medium kw-yellow" >Change Password</button>
                                         <!--/ .kw-additional-action -->
                                  </form>
                               </div>
@@ -229,13 +234,13 @@ $this->load->view('common/footer');
 ?>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8IadnL8n0vlI6l9aQ9iHIqhlNSOesTSY&libraries=places"></script>
 <script src="<?php echo base_url(); ?>assets/js/map/angularjs-google-maps.js"></script>
-
 <script>
 (function(){
 'use strict';
 angular.module('BusyToEasy', ['ngAnimate','ngSanitize','gm'])
 .controller('EditUserCtrl', ['Database','$scope',function(Database,$scope) {
   $scope.edit = {};
+  $scope.change = {};
   $scope.signupValidation = false;
   $scope.responceError = false;
   $scope.responceSucces = false;
@@ -243,9 +248,8 @@ angular.module('BusyToEasy', ['ngAnimate','ngSanitize','gm'])
   $scope.edit.map_latitude = true;
   $scope.edit.map_longitude = true;
   $scope.edit.address = "";
+  $scope.tabs = "";
   $scope.edit.user = "<?php echo base64_encode(base64_encode("User".($login_details[0]['id'] + 356))."/weblist"); ?>";
-
-
     <?php
         if(isset($login_details) and is_array($login_details)){
         foreach($login_details as $value){ ?>
@@ -258,20 +262,57 @@ angular.module('BusyToEasy', ['ngAnimate','ngSanitize','gm'])
                 address: "<?php echo $value['address']; ?>"
             };
     <?php } } ?>
-  
-  
   // Navigation functions
-  $scope.UpdateUserDetails = function () {
-    //$scope.direction = 1;
-    //$scope.stage = stage;
+  $scope.UpdateUserDetails = function (isValid) {
     $scope.signupValidation = true;
-    if ($scope.editUserForm.$valid){
+    if (isValid){
         $scope.signupValidation = false;
         $scope.responceError = false;
         $scope.responceSucces = false;
         $scope.pageLoader = true;
         
         Database.updateUserSubmitNew($scope.edit)
+            .then(function (response) {
+                console.log(response);
+                if (response && response.data && response.data.status && response.data.status === 'success') {
+              $scope.loginError = response.data.message;
+              $scope.responceError = false;
+              $scope.responceSucces = true;
+                } else {
+                  if (response && response.data && response.data.status && response.data.status === 'error') {
+                      $scope.loginError = response.data.message;
+                      $scope.responceError = true;
+                      $scope.responceSucces = false;
+                  }else{
+                      $scope.loginError = "Error occured1";
+                      $scope.responceError = true;
+                      $scope.responceSucces = false;
+                  }
+                }
+                $scope.pageLoader = false;
+            }, function(error) {
+                console.log(error);
+                $scope.loginError = "Error occured: "+ error.message;
+                $scope.responceError = true;
+                $scope.responceSucces = false;
+                $scope.pageLoader = false;
+            });
+    }
+  };
+  
+  // Navigation functions
+  $scope.ChangeUserPassword = function (isValid) {
+      console.log($scope.change);
+    $scope.signupValidation = true;
+    if (isValid){
+        $scope.signupValidation = false;
+        $scope.responceError = false;
+        $scope.responceSucces = false;
+        $scope.pageLoader = true;
+        
+        console.log($scope.change);
+        
+        Database.changePasswordUserSubmit($scope.change)
             .then(function (response) {
                 console.log(response);
                 if (response && response.data && response.data.status && response.data.status === 'success') {
@@ -309,52 +350,13 @@ angular.module('BusyToEasy', ['ngAnimate','ngSanitize','gm'])
       $scope.edit.map_longitude = location.lng();
     });
     
-    $scope.callingCrtl = function () {
-        alert("Calling Cntlr");
-    };
-  
-  // Post to desired exposed web service.
-  $scope.updateUserSubmit1 = function () {
-      var wsUrl = "<?php echo base_url(); ?>user_forgot_password";
-    // Check form validity and submit data using $http
-    if ($scope.editUserForm.$valid) {
+    $scope.changeTabs = function (tab){
         $scope.signupValidation = false;
         $scope.responceError = false;
         $scope.responceSucces = false;
-        $scope.pageLoader = true;
-        console.log($scope.edit);
-      
-      $http({
-        method: 'POST',
-        url: wsUrl,
-        data: $scope.edit,
-      }).then(function successCallback(response) {
-          console.log(response);
-        if (response && response.data && response.data.status && response.data.status === 'success') {
-              $scope.loginError = response.data.message;
-              $scope.responceError = false;
-              $scope.responceSucces = true;
-        } else {
-          if (response && response.data && response.data.status && response.data.status === 'error') {
-              $scope.loginError = response.data.message;
-              $scope.responceError = true;
-              $scope.responceSucces = false;
-          }else{
-              $scope.loginError = "Error occured1";
-              $scope.responceError = true;
-              $scope.responceSucces = false;
-          }
-        }
         $scope.pageLoader = false;
-      }, function errorCallback(response) {
-            console.log(response);
-            $scope.loginError = "Error occured2";
-            $scope.responceError = true;
-            $scope.responceSucces = false;
-            $scope.pageLoader = false;
-      });
-    }
-  };
+        $scope.tabs = tab;
+    };
 }]);
 })();
 </script>
@@ -388,6 +390,16 @@ updateUserSubmitNew: function (input) {
                 url: base_url,
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                 data: { "name": input.name,"email": input.email,"address": input.address,"city": input.city,"mobile": input.mobile }
+            });
+},
+changePasswordUserSubmit: function (input) {
+    console.log(input);
+    var base_url = "<?php echo base_url(); ?>user_change_password";
+            return $http({
+                method: 'POST',
+                url: base_url,
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                data: input
             });
 }
  };

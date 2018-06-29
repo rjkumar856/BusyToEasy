@@ -8,6 +8,7 @@
 <head>
 <!-- Meta Tags -->
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <base href="<?php echo base_url(); ?>" />
 <!-- Page Title -->
@@ -15,13 +16,25 @@
 <meta name="description" content="BusyToEasy Service Experts | Hire Wedding, Home &amp; Beauty Professionals" />
 <meta name="keywords" content="BusyToEasy Service Experts | Hire Wedding, Home &amp; Beauty Professionals"/>
 <meta name="author" content="BusyToEasy Service Experts | Hire Wedding, Home &amp; Beauty Professionals" />
+<meta data-react-helmet="true" name="theme-color" content="#222"/>
 <!-- Favicon and Touch Icons -->
-<link href="<?php echo base_url(); ?>assets/images/favicon.ico" rel="shortcut icon" type="image/png">
+<link href="<?php echo base_url(); ?>assets/images/logo.ico" rel="shortcut icon" type="image/png">
 <link href="<?php echo base_url(); ?>assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 <link href="<?php echo base_url(); ?>assets/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
 <link href="<?php echo base_url(); ?>assets/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
 <link href="<?php echo base_url(); ?>assets/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta charset="utf-8">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="author" content="Uriah Solution Pvt. Ltd." />
+		<meta name="language" content="english"/>
+		<meta name="robots" content="index, follow" />
+		<meta name="robots" content="noodp" />
+		<meta property="og:title" content="Uriah | IT Services, Technology, Consulting, Digital Marketing">
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<link rel="canonical" href="<?php echo base_url(); ?>"/>
       <!-- Favicon
          ============================================ -->
       <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon.html">
@@ -38,7 +51,7 @@
          ============================================ -->
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css?ver=<?php echo time(); ?>">
 </head>
-<body class="<?php if(isset($activepage) && !$activepage != 'home'){ echo "subpages "; } ?> <?php if(isset($activepage)){ echo $activepage; } ?>" <?php if(isset($activepage) && $activepage == 'category'){ ?>ng-controller="QuestionsCtrl" ng-cloak <?php } ?>>
+<body class="<?php if(isset($activepage) && !$activepage != 'home'){ echo "subpages "; } ?> <?php if(isset($activepage)){ echo $activepage; } ?>" <?php if(isset($activepage) && $activepage == 'category'){ ?>ng-controller="QuestionsCtrl as UQuery" ng-cloak <?php } ?>>
       <!-- - - - - - - - - - - - - - Layout - - - - - - - - - - - - - - - - -->
       <div class="kw-wide-layout-type">
          <!-- - - - - - - - - - - - - - How it Works (hidden) - - - - - - - - - - - - - - - - -->
@@ -159,7 +172,7 @@
                <div class="kw-sm-table-row row">
                   <div class="col-sm-2 col-md-3">
                      <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
-                     <a href="index-2.html">
+                     <a href="<?php echo base_url(); ?>">
                      <img src="<?php echo base_url(); ?>assets/images/uriah.png" style="width:200px;" alt="">
                      </a>
                      <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
@@ -170,32 +183,32 @@
                         <nav class="kw-nav-wrap">
                            <ul class="kw-navigation">
                               <li class=" kw-current">
-                                 <a href="index.html">Home</a>
+                                 <a href="<?php echo base_url(); ?>">Home</a>
                               </li>
                               <li class="kw-has-children">
-                                 <a href="explore_category_v1.html">Explore</a>
+                                 <a href="<?php echo base_url(); ?>">Explore</a>
                                  <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
                                  <ul class="kw-sub-menu">
                                     <li class="kw-has-children">
-                                       <a href="explore_category_v1.html">Category Layouts</a>
+                                       <a href="<?php echo base_url(); ?>">Category Layouts</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="explore_category_v1.html">Layout 1</a></li>
-                                          <li><a href="explore_category_v2.html">Layout 2</a></li>
-                                          <li><a href="explore_category_v3.html">Layout 3</a></li>
-                                          <li><a href="explore_category_v4.html">Layout 4</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 1</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 2</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 3</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 4</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>
                                     <li class="kw-has-children">
-                                       <a href="explore_listing_page_v1.html">Listing Page Layouts</a>
+                                       <a href="<?php echo base_url(); ?>">Listing Page Layouts</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="explore_listing_page_v1.html">Layout 1</a></li>
-                                          <li><a href="explore_listing_page_v2.html">Layout 2</a></li>
-                                          <li><a href="explore_listing_page_v3.html">Layout 3</a></li>
-                                          <li><a href="explore_listing_page_v4.html">Layout 4</a></li>
-                                          <li><a href="explore_listing_page_v5.html">Layout 5</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 1</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 2</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 3</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 4</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Layout 5</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>
@@ -203,62 +216,62 @@
                                  <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
                               </li>
                               <li class="kw-has-children">
-                                 <a href="pages_how_it_works.html">Pages</a>
+                                 <a href="<?php echo base_url(); ?>">Pages</a>
                                  <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
                                  <ul class="kw-sub-menu">
                                     <li class="kw-has-children">
-                                       <a href="pages_how_it_works.html">Content Pages</a>
+                                       <a href="<?php echo base_url(); ?>">Content Pages</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="pages_how_it_works.html">How It Works</a></li>
-                                          <li><a href="pages_pricing_tables.html">Pricing Tables</a></li>
-                                          <li><a href="pages_faq.html">FAQ</a></li>
-                                          <li><a href="pages_404.html">404 Page</a></li>
-                                          <li><a href="pages_contacts.html">Contacts</a></li>
-                                          <li><a href="pages_full_width.html">Full Width Page</a></li>
-                                          <li><a href="pages_right_sidebar.html">Page With Right Sidebar</a></li>
-                                          <li><a href="pages_left_sidebar.html">Page With Left Sidebar</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">How It Works</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Pricing Tables</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">FAQ</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">404 Page</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Contacts</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Full Width Page</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Page With Right Sidebar</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Page With Left Sidebar</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>
                                     <li class="kw-has-children">
-                                       <a href="pages_account.html">Profile Pages</a>
+                                       <a href="<?php echo base_url(); ?>">Profile Pages</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="pages_account.html">My Account</a></li>
-                                          <li><a href="pages_listings.html">My Listings</a></li>
-                                          <li><a href="pages_new_listing.html">Add New Listing</a></li>
-                                          <li><a href="pages_bookmarks.html">Bookmarks</a></li>
-                                          <li><a href="pages_messages.html">Messages</a></li>
-                                          <li><a href="pages_edit_profile.html">Edit Profile</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">My Account</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">My Listings</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Add New Listing</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Bookmarks</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Messages</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Edit Profile</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>
-                                    <li><a href="pages_elements.html">Elements</a></li>
-                                    <li><a href="pages_typography.html">Typography</a></li>
-                                    <li><a href="pages_columns.html">Columns</a></li>
+                                    <li><a href="<?php echo base_url(); ?>">Elements</a></li>
+                                    <li><a href="<?php echo base_url(); ?>">Typography</a></li>
+                                    <li><a href="<?php echo base_url(); ?>">Columns</a></li>
                                  </ul>
                                  <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
                               </li>
                               <li class="kw-has-children">
-                                 <a href="blog_with_sidebar.html">Blog</a>
+                                 <a href="<?php echo base_url(); ?>">Blog</a>
                                  <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
                                  <ul class="kw-sub-menu">
                                     <li class="kw-has-children">
-                                       <a href="blog_with_sidebar.html">Blog Layouts</a>
+                                       <a href="<?php echo base_url(); ?>">Blog Layouts</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="blog_with_sidebar.html">Blog With Sidebar</a></li>
-                                          <li><a href="blog_masonry.html">Masonry Blog</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Blog With Sidebar</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Masonry Blog</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>
                                     <li class="kw-has-children">
-                                       <a href="blog_post_with_sidebar.html">Blog Post Layouts</a>
+                                       <a href="<?php echo base_url(); ?>">Blog Post Layouts</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="blog_post_with_sidebar.html">With Sidebar</a></li>
-                                          <li><a href="blog_post_full_width.html">Full Width</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">With Sidebar</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Full Width</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>
@@ -266,24 +279,24 @@
                                  <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
                               </li>
                               <li class="kw-has-children">
-                                 <a href="deals_with_sidebar.html">Deals</a>
+                                 <a href="<?php echo base_url(); ?>">Deals</a>
                                  <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
                                  <ul class="kw-sub-menu">
                                     <li class="kw-has-children">
-                                       <a href="deals_with_sidebar.html">Deals Page Layouts</a>
+                                       <a href="<?php echo base_url(); ?>">Deals Page Layouts</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="deals_with_sidebar.html">Deals Page With Sidebar</a></li>
-                                          <li><a href="deals_full_width.html">Full Width Deals Page</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Deals Page With Sidebar</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Full Width Deals Page</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>
                                     <li class="kw-has-children">
-                                       <a href="deals_single_with_sidebar.html">Single Deal Page Layouts</a>
+                                       <a href="<?php echo base_url(); ?>">Single Deal Page Layouts</a>
                                        <!-- - - - - - - - - - - - - - Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                        <ul class="kw-sub-menu">
-                                          <li><a href="deals_single_with_sidebar.html">With Sidebar</a></li>
-                                          <li><a href="deals_single_full_width.html">Full Width</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">With Sidebar</a></li>
+                                          <li><a href="<?php echo base_url(); ?>">Full Width</a></li>
                                        </ul>
                                        <!-- - - - - - - - - - - - - - End of Submenu (level 3) - - - - - - - - - - - - - - - - -->
                                     </li>

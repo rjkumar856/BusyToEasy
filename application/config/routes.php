@@ -58,8 +58,19 @@ $route['send_sms'] = "category/sendSMS";
 $route['user_signup'] = "login/signup_submission";
 $route['user_login'] = "login/login_submission";
 $route['user_update'] = "login/user_update";
+$route['user_change_password'] = "login/change_password";
+
+$route['submit_yoga_trainer'] = "category/submit_yoga_trainer";
+$route['submit_dietician'] = "category/submit_dietician";
+$route['submit_physiotherapy_at_home'] = "category/submit_physiotherapy_at_home";
+
+
 $route['user_forgot_password'] = "login/forgot_password";
 $route['my_bookings'] = "login/my_bookings";
+
+$route['my_ongoingbookingsAjax'] = "login/my_ongoingbookingsAjax";
+$route['my_bookingsAjax'] = "login/my_bookingsAjax";
+
 $route['my_account'] = "login/my_account";
 $route['logout'] = "login/logout";
 

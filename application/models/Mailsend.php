@@ -44,11 +44,11 @@ class Mailsend extends CI_Model{
                             <br></td>
                         </tr>
                         <tr><td colspan="4" style="padding: 20px; font-size: 14px"><div style="font-size: 14px"> <span>Regards,</span></div>
-                            <div style="font-size: 14px; padding-top: 10px"> <span>BusyToEasy</span> </div></td>
+                            <div style="font-size: 14px; padding-top: 10px"> <span>BusyToEasy Team</span> </div></td>
                         </tr>
                         <tr>
                         <td colspan="4" style="padding: 10px 20px; font-size: 14px;background: #0093de;color:#fff;font-size: 10px;">
-                        <p>World Vision Cable is a pioneer internet and Cable network provider in Bangalore. Our motto is to become a seamless service provider across the city both for businesses and home at various levels of internet speed.</p>
+                        <p>The information contained in this e-mail is private & confidential and may also be legally privileged. If you are not the intended recipient of this mail, please notify us, preferably by e-mail; and do not read, copy or disclose the contents of this message to anyone. Whilst we have taken reasonable precautions to ensure that any attachment to this e-mail has been swept for viruses, e-mail communications cannot be guaranteed to be secure or error free, as information can be corrupted, intercepted, lost or contain viruses. We do not accept liability for such matter or their consequences.</p>
                         </td></tr></tbody></table></div></div></div></body></html>';
 	    
         	    $config['protocol']    = 'sendmail';
